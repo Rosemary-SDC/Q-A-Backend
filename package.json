@@ -1,0 +1,28 @@
+{
+  "name": "q-a-backend",
+  "description": "Server &amp; DB for Kilimanjaro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx nodemon ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosemary-SDC/Q-A-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rosemary-SDC/Q-A-Backend/issues"
+  },
+  "homepage": "https://github.com/Rosemary-SDC/Q-A-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "neo4j-driver": "^4.4.5",
+    "node": "^17.7.2",
+    "nodemon": "^2.0.15",
+    "npx": "^10.2.2"
+  }
+}
