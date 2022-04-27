@@ -1,12 +1,16 @@
 import Express from 'express';
 import morgan from 'morgan';
 import session from './db/index.js';
+import helmet from 'helmet';
+import 'dotenv/config';
 
 const app = Express();
 app.use(Express.json());
 app.use(Express.urlencoded());
+app.use(morgan('combined'));
+app.use(helmet());
 import router from './routes.js';
-const port = 3000;
+const port = process.env.PORT;
 
 app.use('/', router);
 
